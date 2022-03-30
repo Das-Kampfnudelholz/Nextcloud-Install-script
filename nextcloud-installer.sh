@@ -1,9 +1,9 @@
 sudo apt-get update
 sudo apt-get upgrade
 echo "Getting dependecies for Nextcloud"
-sudo apt-get install unzip -y -q
-sudo apt-get install nginx mysql-server -y -q
-sudo apt-get install php7.4 php7.4-cli php7.4-common php7.4-json php7.4-fpm php7.4-curl php7.4-mysql php7.4-gd php7.4-opcache php7.4-xml php7.4-zip php7.4-mbstring -y -q
+sudo apt-get install unzip -y 
+sudo apt-get install nginx mysql-server -y 
+sudo apt-get install php7.4 php7.4-cli php7.4-common php7.4-json php7.4-fpm php7.4-curl php7.4-mysql php7.4-gd php7.4-opcache php7.4-xml php7.4-zip php7.4-mbstring -y 
 echo "Setting PHP as an service"
 sudo systemctl start php7.4-fpm
 sudo systemctl enable php7.4-fpm
