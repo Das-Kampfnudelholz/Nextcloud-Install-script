@@ -22,3 +22,7 @@ sudo unzip -q /var/www/latest.zip /var/www/
 sudo rm /var/www/latest.zip
 sudo chown -R www-data:www-data nextcloud
 sudo rm /etc/nginx/sites-enabled/default
+sudo ufw allow tcp 443
+sudo ufw allow udp 443
+sudo ufw allow tcp 80
+sudo ufw allow udp 80
